@@ -1,0 +1,83 @@
+{
+    "contact": {
+        "is_page": true,
+
+        "template": "page",
+        "stylesheet": "index",
+        "date": "01012026",
+
+        "title": "Contact",
+        "icon": "/logo.png",
+
+        "content": "path/to/inputfile",
+        "content_type": "html"
+    },
+    "index": {
+        "is_page": true,
+
+        "template": "directory",
+        "stylesheet": "index",
+        "date": "01022026",
+
+        "title": "Lepidopteran Host",
+        "icon": "/logo.png",
+
+        "content": "/path/to/inputfile",
+        "content_type": "odt"
+    },
+    "writing": {
+        "is_page": false,
+
+        "index": {
+            "is_page": true,
+
+            "template": "directory",
+            "stylesheet": "directory",
+            "date" : "03042026",
+
+            "widget_image": "/logo.png",
+            "widget_title": "Writing",
+            "widget_description": "Here you can find things I've written. Fiction, 'non-fiction' (if such a thing exists) is all here.",
+            "title": "The Written Word",
+            "icon": "/logo.png",
+
+            "content": "/path/to/inputfile",
+            "content_type": "txt"
+        },
+
+        "contents": {
+            "bestreads": {
+                "is_page": true,
+
+                "template": "page",
+                "stylesheet": "page",
+                "date": "01082025",
+
+                "widget_image": "/media/bookclipart.gif",
+                "widget_title": "2025's Three Best Reads",
+                "widget_description": "I have been astounded, recently, by the sheer volume of fantastic books that have appeared on shelves and in online stores in the past year. On my trips abroad, the airport bookshops are packed with works that are just so fantastically relatable, engaging and thoughtful. I feel glad to be a reader in a time so fertile with amazing written works.",
+                "title": "2025's Three Best Reads",
+                "icon": "/logo.png",
+
+                "content": "/path/to/inputfile",
+                "content_type": "odt"
+            },
+            "finance": {
+                "is_page": true,
+
+                "template": "page",
+                "stylesheet": "page",
+                "date": "01042026",
+
+                "widget_image": "/media/crt.png",
+                "widget_title": "Buying a New Computer",
+                "widget_description": "You have got a lot going on. One minute you’re browsing the web while editing documents. Later, you’re working on a spreadsheet while streaming music. Multitaskers like you need a PC that can manage everything at once without a glitch. Here are some specifications to help make that happen.",
+                "title": "2025's Three Best Reads",
+                "icon": "/logo.png",                
+
+                "content": "/path/to/inputfile",
+                "content_type": "odt"
+            }
+        }
+    }
+}
