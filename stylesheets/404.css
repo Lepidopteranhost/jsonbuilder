@@ -1,0 +1,95 @@
+@keyframes rotateBackground {
+  from { transform: rotate(360deg); }
+  to   { transform: rotate(0deg); }
+}
+
+@keyframes floater {
+  0%{transform: translateY(1%);transition: ease 0.5s;}
+  50%{transform: translateY(2%);transition: ease 0.5s;}
+  100%{transform: translateY(1%);transition: ease 0.5s;}
+}
+
+body {
+	background-image: url("/background.png");
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+
+
+    .header {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        display: flex;
+        margin: 1vw;
+
+        img {
+            max-width: 80vw;
+        }
+    }
+
+    .content {
+        width: 80vw;
+        height: auto;
+
+        margin: auto;
+        margin-top: 1vw;
+        margin-bottom: 3vw;
+        /* padding: 3vw; */
+        
+        a {
+            color: yellow;
+        }
+
+        a:hover {
+            color: #F55DE8;
+            background-image: url(/weedy.gif);
+        }
+
+        .image-wrapper {
+
+            position: relative;
+            width: fit-content;
+            margin: 0 auto;
+
+        }
+
+        #monk { 
+            display: block;
+            margin: auto;
+            animation: floater 5s linear infinite;
+        }
+
+        #text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: rotateBackground 70s linear infinite;
+
+        }
+
+        
+        text-align: center;
+    }
+
+    .footer {
+        border: 3px solid white;
+        padding: 1vw;
+        width: 40%;
+        height: auto;
+        margin: auto;
+        margin-top: 3vw;
+
+        a {
+        color: white;
+        }
+    }
+
+    .footer:hover {
+        background-image: url(/weedy.gif);
+    }
+
+}

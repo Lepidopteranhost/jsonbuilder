@@ -42,8 +42,8 @@ class Node:
         if not segments:
             return "/"
         if self.is_directory:
-            return "/" + segments + "/index.html"
-        return "/" + segments + ".html"
+            return "/" + segments + "/"
+        return "/" + segments
 
     @property
     def template(self) -> str:

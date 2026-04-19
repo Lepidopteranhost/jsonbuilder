@@ -28,6 +28,11 @@
     "writing": {
         "is_page": false,
 
+        "template": "page",
+        "stylesheet": "page",
+        "content_type": "odt",
+        "icon": "/logo.png",
+
         "index": {
             "is_page": true,
 
@@ -49,18 +54,15 @@
             "bestreads": {
                 "is_page": true,
 
-                "template": "page",
-                "stylesheet": "page",
                 "date": "01082025",
 
                 "widget_image": "/media/bookclipart.gif",
                 "widget_title": "2025's Three Best Reads",
                 "widget_description": "I have been astounded, recently, by the sheer volume of fantastic books that have appeared on shelves and in online stores in the past year. On my trips abroad, the airport bookshops are packed with works that are just so fantastically relatable, engaging and thoughtful. I feel glad to be a reader in a time so fertile with amazing written works.",
                 "title": "2025's Three Best Reads",
-                "icon": "/logo.png",
 
                 "content": "/path/to/inputfile",
-                "content_type": "odt"
+
             },
             "finance": {
                 "is_page": true,

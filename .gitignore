@@ -24,3 +24,5 @@ build/
 output
 structure.json
 
+# Testing
+Caddyfile
