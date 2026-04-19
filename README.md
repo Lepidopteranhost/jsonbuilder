@@ -49,6 +49,8 @@ Each key in the JSON is either:
 
 The root object may also contain an `"index"` key for the site's home page.
 
+In the example JSON structure file included, you can see that the "writing" directory specifies defaults which are not overridden in the first entry in its contents. This saves time when writing the structure out.
+
 ### Slugs / URLs
 
 Keys are slugified by stripping underscores and spaces:
