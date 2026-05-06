@@ -3,6 +3,13 @@
   to   { transform: rotate(360deg); }
 }
 
+@font-face {
+  font-family: 'Caligra MN';
+  src: url('/media/fonts/caligra.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
 	background-image: url("/background.png");
     display: flex;
@@ -150,6 +157,15 @@ body {
         }
     }
 
+    .content h2+p::first-letter, p:first-of-type::first-letter{
+        float: left;
+
+        line-height: 1;
+        font-family: 'Caligra MN';
+        font-size: 80px;
+        font-weight: bold;
+    }
+
     .content {
         border: 3px solid white;
         width: 80vw;
@@ -206,4 +222,87 @@ body {
         background-image: url(/marblingtexture2.jpg);
     }
 
+}
+
+@media all and (max-width: 600px) {
+
+    body {
+
+        .header {
+            width: 100%;
+            height: auto;
+            justify-content: center;
+            display: flex;
+            margin: 1vw;
+            /* border: 1px solid white; */
+
+            img {
+                max-width: 80vw;
+            }
+        }
+
+        .sidebar img {
+            display:block;
+        }
+
+        .sidebar {
+            order: 3;
+            border: 3px solid white;
+            width: 85vw;
+            height: auto;
+            margin: auto;
+            margin-top: 1vw;
+
+            h3 {
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .recent-pages {
+                border: none;
+
+                .recent-widget {
+                    border: 1px solid white;
+                    display: block;
+                    justify-content: center;
+                    color: white;
+                    margin: 3vw;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    padding: 1vw;
+                    position: relative;
+                    overflow: hidden;
+
+                    img {
+                        height: 10vw;
+                        margin-right: 1vw;
+                    }
+                }
+            }
+            .directories {
+                border: none;
+
+                .dir-widget {
+                    border: 1px solid white;
+                    display: block;
+                    justify-content: center;
+                    color: white;
+                    margin: 3vw;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    padding: 1vw;
+                    position: relative;
+                    overflow: hidden;
+
+                    img {
+                        height: 10vw;
+                        margin-right: 1vw;
+                    }
+                }
+            }
+            .content {
+                order: 2;
+            }
+        }
+    }
 }
